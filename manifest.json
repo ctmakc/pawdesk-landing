@@ -1,0 +1,17 @@
+{
+  "name": "PawDesk",
+  "short_name": "PawDesk",
+  "description": "Run your grooming business from your phone.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#4F46E5",
+  "background_color": "#FAFAF9",
+  "icons": [
+    {
+      "src": "/public/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "pawdesk-landing",
+  "version": "0.1.0",
+  "description": "PawDesk marketing landing page — static HTML + CF Pages Functions",
+  "private": true,
+  "scripts": {
+    "dev": "npx wrangler pages dev . --port 5173",
+    "deploy": "npx wrangler pages deploy . --project-name pawdesk-landing",
+    "build:css": "npx tailwindcss -i ./css/style.css -o ./css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "wrangler": "^3.0.0"
+  }
+}
