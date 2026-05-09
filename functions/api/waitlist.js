@@ -16,6 +16,8 @@
 export async function onRequestPost(context) {
   const { request, env } = context;
 
+  console.log('[waitlist] signup attempt');
+
   // -----------------------------------------------------------------------
   // 1. Parse + validate body
   // -----------------------------------------------------------------------
@@ -69,8 +71,8 @@ export async function onRequestPost(context) {
 
     // Resend returns 200 or 201 on success; 409 means already subscribed (treat as ok)
     if (!resendRes.ok && resendRes.status !== 409) {
-      const errText = await resendRes.text().catch(() => '');
-      console.error('[waitlist] Resend error', resendRes.status, errText);
+      // Log only the HTTP status code — never log the email or response body (may echo PII)
+      console.error('[waitlist] signup failed: Resend HTTP', resendRes.status);
       return jsonResponse({ ok: false, error: 'Could not add you to the list. Please try again.' }, 500);
     }
 
@@ -80,9 +82,9 @@ export async function onRequestPost(context) {
         await env.WAITLIST.put(`contact:${trimmedEmail}`, JSON.stringify(entry), {
           expirationTtl: 60 * 60 * 24 * 730, // 2 years
         });
-      } catch (kvErr) {
+      } catch {
         // Non-fatal: Resend already has the contact
-        console.warn('[waitlist] KV metadata write failed (non-fatal):', kvErr);
+        console.warn('[waitlist] KV metadata write failed (non-fatal): KV_ERROR');
       }
     }
   } else if (env.WAITLIST) {
@@ -92,7 +94,9 @@ export async function onRequestPost(context) {
         expirationTtl: 60 * 60 * 24 * 730, // 2 years
       });
     } catch (kvErr) {
-      console.error('[waitlist] KV write error:', kvErr);
+      // Log error code/name only — never include email in logs
+      const errCode = kvErr instanceof Error ? kvErr.name : 'UNKNOWN';
+      console.error('[waitlist] signup failed: KV_ERROR', errCode);
       return jsonResponse({ ok: false, error: 'Could not save your info. Please try again.' }, 500);
     }
   } else {
@@ -102,6 +106,7 @@ export async function onRequestPost(context) {
     console.warn('[waitlist] No storage configured (RESEND_AUDIENCE_ID or WAITLIST KV not set).');
   }
 
+  console.log('[waitlist] signup succeeded');
   return jsonResponse({ ok: true });
 }
 

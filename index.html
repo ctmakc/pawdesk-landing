@@ -496,5 +496,55 @@
   </footer>
 
   <script src="/js/waitlist.js"></script>
+
+  <!-- Niche-aware copy: ?niche=horse-trainer swaps groomer language for equestrian language -->
+  <script>
+    (function () {
+      var niche = new URLSearchParams(window.location.search).get('niche');
+      if (niche !== 'horse-trainer') return;
+
+      var swaps = [
+        ['grooming business', 'equestrian business'],
+        ['Grooming business', 'Equestrian business'],
+        ['grooming salon', 'training facility'],
+        ['Grooming salon', 'Training facility'],
+        ['groomer', 'trainer'],
+        ['Groomer', 'Trainer'],
+        ['groomers', 'trainers'],
+        ['Groomers', 'Trainers'],
+        [' pets', ' horses'],
+        [' pet ', ' horse '],
+        [' dog ', ' horse '],
+        ['dogs', 'horses'],
+        ['Dogs', 'Horses'],
+        ['dog walker', 'horse trainer'],
+        ['Dog walker', 'Horse trainer'],
+        ['animal care', 'equestrian care'],
+        ['the animals', 'the horses'],
+      ];
+
+      function replaceText(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          var text = node.nodeValue;
+          for (var i = 0; i < swaps.length; i++) {
+            text = text.split(swaps[i][0]).join(swaps[i][1]);
+          }
+          node.nodeValue = text;
+        } else if (node.nodeType === Node.ELEMENT_NODE &&
+                   node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
+          for (var c = 0; c < node.childNodes.length; c++) {
+            replaceText(node.childNodes[c]);
+          }
+        }
+      }
+
+      replaceText(document.body);
+
+      // Also swap meta title/description for share links
+      document.title = document.title
+        .split('grooming business').join('equestrian business')
+        .split('groomers').join('trainers');
+    })();
+  </script>
 </body>
 </html>
