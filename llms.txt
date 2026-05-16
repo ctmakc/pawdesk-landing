@@ -1,0 +1,46 @@
+# PawDesk
+
+> PawDesk is a mobile CRM built specifically for independent pet groomers, dog walkers, cat groomers, and mobile grooming van operators. It replaces spreadsheets and paper diaries with a single, phone-first app.
+
+## What PawDesk Does
+
+PawDesk gives solo pet care professionals everything they need to run a professional business without hiring an office manager.
+
+## Core Features
+
+- **Scheduling calendar** — book, view, and manage appointments from your phone; week-at-a-glance view; drag-to-reschedule
+- **Digital invoicing** — one-tap PDF invoice generation; accept card payments; track paid and outstanding balances
+- **Client & pet profiles** — store pet photos, breed, weight, coat type, allergies, preferred shampoo, and vet contact per animal
+- **Appointment reminders** — automated email reminders sent 24 hours before each appointment; reduces no-shows
+- **Payment history** — full ledger per client; see lifetime value, last payment date, and outstanding balance at a glance
+- **Voice notes per visit** — dictate post-appointment notes hands-free; auto-transcribed and saved to the pet's record
+- **Dashboard** — today's schedule, outstanding invoices, and recent activity in one screen
+
+## Target Audience
+
+- Freelance / independent dog groomers
+- Mobile grooming van operators
+- Home-based grooming salon owners
+- Dog walkers who also offer grooming
+- Cat groomers
+- Pet sitters who offer grooming add-ons
+
+## Pricing
+
+- **Free (Beta)** — full access during beta, all features included, early-adopter rate locked in
+- **Pro** — $19/month when paid plans launch
+- **Business** — $49/month for multi-staff / higher volume
+
+## Company
+
+PawDesk is built in Canada for the North American pet care market. The app works on any smartphone — no download required during beta.
+
+## Links
+
+- Homepage: https://pawdesk-landing.pages.dev/
+- Features: https://pawdesk-landing.pages.dev/features.html
+- Pricing: https://pawdesk-landing.pages.dev/pricing.html
+- Blog: https://pawdesk-landing.pages.dev/blog/
+- FAQ: https://pawdesk-landing.pages.dev/faq.html
+- Compare: https://pawdesk-landing.pages.dev/compare.html
+- Live demo: https://demo.pawdesk.app
