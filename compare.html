@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PawDesk vs Spreadsheets vs Square vs Acuity</title>
   <meta name="description" content="Compare PawDesk to spreadsheets, Square Appointments, and Acuity. See why independent groomers choose PawDesk for scheduling, invoicing, and pet notes.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="PawDesk">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -83,6 +85,72 @@
     .prose ul { list-style: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem; }
     .prose li { font-size: 1rem; color: var(--gray-600); line-height: 1.7; }
   </style>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pawdesk-landing.pages.dev/" },
+      { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://pawdesk-landing.pages.dev/compare.html" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PawDesk",
+    "url": "https://pawdesk-landing.pages.dev/",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Pet Grooming Software",
+    "operatingSystem": "iOS, Android, Web",
+    "description": "Grooming-specific software for independent pet groomers — an alternative to spreadsheets, Square Appointments, and Acuity Scheduling, with pet profiles, voice notes, and integrated invoicing.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free during beta. Pro from $19/month when paid plans launch."
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is PawDesk a good alternative to a spreadsheet for a grooming business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Spreadsheets are free and flexible but have no appointment conflict detection, no automatic reminders, no pet profiles, and no invoicing. PawDesk replaces the spreadsheet with grooming-specific scheduling, pet records, voice notes, and one-tap invoicing, and is free during beta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is PawDesk different from Square Appointments for groomers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Square Appointments is a general salon and retail tool with no concept of a pet — no breed, coat type, allergy, or visit history. PawDesk is built for groomers: pet profiles, hands-free voice notes, and grooming-specific scheduling. Square starts at $29/month; PawDesk is free during beta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PawDesk a better choice than Acuity Scheduling for a groomer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Acuity is a strong generic online-booking tool but has no pet profiles, no built-in invoicing, and no voice notes. If self-service client booking is your main need, Acuity is good. If you manage bookings yourself and need pet records, visit history, and invoicing in one app, PawDesk fits a grooming business better."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
