@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About PawDesk — Grooming Software, Honestly Built</title>
+  <meta name="description" content="What PawDesk is, who it's for, and why a small Canadian team is building grooming software for solo pet groomers instead of big salon chains. Built in beta, in the open.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="PawDesk">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pawdesk-landing.pages.dev/about.html">
+  <meta property="og:title" content="About PawDesk — Grooming software, honestly built">
+  <meta property="og:description" content="What PawDesk is, who it's for, and why we're building grooming software for solo pet groomers — in beta, in the open.">
+  <meta property="og:image" content="https://pawdesk-landing.pages.dev/public/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PawDesk — grooming software dashboard on a phone">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:site_name" content="PawDesk">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About PawDesk — Grooming software, honestly built">
+  <meta name="twitter:description" content="What PawDesk is, who it's for, and why we're building it in beta, in the open.">
+  <meta name="twitter:image" content="https://pawdesk-landing.pages.dev/public/og-image.png">
+
+  <link rel="canonical" href="https://pawdesk-landing.pages.dev/about.html" /> <!-- nosemgrep -->
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css" /> <!-- nosemgrep -->
+
+  <style>
+    .about-section { background: var(--white); padding: 5rem 0; }
+    .about-section:nth-child(even) { background: var(--warm-50); }
+    .about-inner { max-width: 720px; margin: 0 auto; }
+    .about-section h2 { margin-bottom: 1rem; }
+    .about-section p { font-size: 1.0625rem; color: var(--gray-600); margin-bottom: 1.25rem; line-height: 1.8; }
+    .about-section ul { list-style: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem; }
+    .about-section li { font-size: 1rem; color: var(--gray-600); line-height: 1.7; }
+    .about-tag { display:inline-block; font-size:0.8125rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--indigo-600); margin-bottom:0.75rem; }
+    .def-box {
+      background: var(--indigo-100);
+      border-left: 4px solid var(--indigo-600);
+      border-radius: 0 12px 12px 0;
+      padding: 1.5rem 1.75rem;
+      margin: 0 auto 2rem;
+      max-width: 720px;
+    }
+    .def-box p { font-size: 1.0625rem; color: var(--gray-900); margin: 0; line-height: 1.75; }
+    .breadcrumb { font-size: 0.8125rem; color: rgba(255,255,255,0.7); margin-bottom: 0.75rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.85); }
+  </style>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pawdesk-landing.pages.dev/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://pawdesk-landing.pages.dev/about.html" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: AboutPage + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "https://pawdesk-landing.pages.dev/about.html",
+    "name": "About PawDesk",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PawDesk",
+      "url": "https://pawdesk-landing.pages.dev/",
+      "logo": "https://pawdesk-landing.pages.dev/public/favicon.svg",
+      "description": "PawDesk is mobile grooming software for independent pet groomers — appointment scheduling, digital invoicing, client and pet profiles, automated reminders, and voice notes in a single phone-first app.",
+      "foundingLocation": { "@type": "Country", "name": "Canada" },
+      "areaServed": ["CA", "US"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hello@pawdesk.app",
+        "availableLanguage": "English"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="logo" aria-label="PawDesk home">
+          <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" fill="#4F46E5"/>
+            <ellipse cx="10" cy="10" rx="3" ry="4" fill="white" opacity="0.9"/>
+            <ellipse cx="22" cy="10" rx="3" ry="4" fill="white" opacity="0.9"/>
+            <ellipse cx="7" cy="18" rx="2.5" ry="3.5" fill="white" opacity="0.9"/>
+            <ellipse cx="25" cy="18" rx="2.5" ry="3.5" fill="white" opacity="0.9"/>
+            <ellipse cx="16" cy="21" rx="6" ry="5" fill="white" opacity="0.9"/>
+          </svg>
+          PawDesk
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="features.html">Features</a>
+          <a href="use-cases.html">Use cases</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog/">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a href="https://demo.pawdesk.app" target="_blank" rel="noopener" class="btn btn-primary nav-cta">
+          Try the demo →
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="demo-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> &rsaquo; About
+      </nav>
+      <span class="section-label" style="color: rgba(255,255,255,0.7);">About</span>
+      <h1>Software for the groomer, not the chain</h1>
+      <p>Most pet-business software is built for multi-location salons with an office manager.
+        PawDesk is built for the person holding the clippers.</p>
+    </div>
+  </section>
+
+  <!-- Definition box (GEO/AEO entity definition) -->
+  <section class="about-section">
+    <div class="container">
+      <div class="def-box">
+        <p><strong>PawDesk</strong> is mobile grooming software for independent pet groomers. It
+          combines appointment scheduling, digital invoicing, client and pet profiles, automated
+          appointment reminders, and hands-free voice notes in a single phone-first app —
+          replacing the spreadsheets, text threads, and paper diaries most solo groomers use
+          today. It is in private beta and free to use during the beta period.</p>
+      </div>
+      <div class="about-inner">
+        <span class="about-tag">Why we exist</span>
+        <h2>The gap we're filling</h2>
+        <p>
+          There are roughly a hundred thousand pet groomers across North America, and the large
+          majority are solo operators or two-person shops. They are skilled tradespeople running
+          real businesses — booking, invoicing, remembering that a specific schnauzer needs
+          hypoallergenic shampoo and bites when you touch his hindquarters.
+        </p>
+        <p>
+          The software market mostly ignores them. The serious tools are built for multi-chair
+          salons and veterinary clinics with front-desk staff: powerful, expensive, and overkill
+          for one person with clippers and a phone. The cheap tools are generic appointment
+          bookers that have no concept of a pet, a coat type, or a groom history. So most solo
+          groomers end up running a real business out of a spreadsheet and their own memory.
+        </p>
+        <p>
+          PawDesk is the missing middle: a focused, phone-first app that does the handful of
+          things a solo groomer actually needs, does them well, and gets out of the way.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-inner">
+        <span class="about-tag">How we build</span>
+        <h2>The principles we hold to</h2>
+        <p>
+          PawDesk is small and early. We would rather say that plainly than dress it up, because
+          the groomers we want as customers can smell marketing fluff from across the room.
+        </p>
+        <ul>
+          <li><strong>Honest about stage.</strong> PawDesk is in beta. We don't publish review counts or star ratings we haven't earned, and we mark roadmap features as roadmap features — not as things you can use today.</li>
+          <li><strong>Phone-first, offline-first.</strong> Groomers work with their hands, often without good signal. Every core action works on a phone, and the schedule, profiles, and voice recorder work with no connection.</li>
+          <li><strong>Your data is yours.</strong> Export everything as CSV or PDF at any time. We never hold client records hostage to keep you subscribed.</li>
+          <li><strong>Built with groomers.</strong> Every feature traces back to a real frustration a working groomer described to us, not a feature-comparison checkbox.</li>
+          <li><strong>Fair pricing.</strong> Free during beta, with an early-adopter rate locked in for the people who help us build it. No per-appointment nickel-and-diming.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who & where -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-inner">
+        <span class="about-tag">Who we are</span>
+        <h2>A small team, in Canada</h2>
+        <p>
+          PawDesk is built by a small independent team in Canada, for the North American pet-care
+          market. We are intentionally not a venture-funded company chasing the enterprise
+          salon-chain market — that market is well served and not who we are building for.
+        </p>
+        <p>
+          We're at the stage where talking to us directly actually changes the product. If you
+          groom dogs or cats for a living and something here resonates — or if you think we've
+          got something wrong — <a href="contact.html">tell us</a>. The roadmap is genuinely
+          shaped by beta feedback.
+        </p>
+        <p>
+          Want the short version of what PawDesk does and who it's for? Read the
+          <a href="features.html">features overview</a>, see <a href="use-cases.html">how it
+          works for your kind of business</a>, or check the <a href="faq.html">FAQ</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="waitlist" aria-labelledby="about-cta-heading">
+    <div class="container">
+      <div class="waitlist-box">
+        <span class="section-label">Get early access</span>
+        <h2 id="about-cta-heading">Help us build the right thing.</h2>
+        <p>Join the beta, use it free, and tell us what's missing. That's the whole deal.</p>
+        <a href="/#waitlist" class="btn btn-primary btn-lg">Join the waitlist — it's free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo" style="color: white;">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#4F46E5"/>
+              <ellipse cx="10" cy="10" rx="3" ry="4" fill="white" opacity="0.9"/>
+              <ellipse cx="22" cy="10" rx="3" ry="4" fill="white" opacity="0.9"/>
+              <ellipse cx="7" cy="18" rx="2.5" ry="3.5" fill="white" opacity="0.9"/>
+              <ellipse cx="25" cy="18" rx="2.5" ry="3.5" fill="white" opacity="0.9"/>
+              <ellipse cx="16" cy="21" rx="6" ry="5" fill="white" opacity="0.9"/>
+            </svg>
+            PawDesk
+          </a>
+          <p>The calmer way to run your animal care business. Built for people who love animals, not admin.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="features.html">Features</a>
+          <a href="use-cases.html">Use cases</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="compare.html">Compare</a>
+          <a href="blog/">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="demo.html">How it works</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 PawDesk. All rights reserved.</span>
+        <span>Made with care in Canada 🇨🇦</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
