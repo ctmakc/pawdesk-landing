@@ -251,6 +251,33 @@ p { color: var(--gray-600); line-height: 1.75; }
   max-width: 700px;
 }
 
+.hero-visual {
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.hero-visual img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 900px) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .hero-content {
+    flex: 1 1 55%;
+  }
+  .hero-visual {
+    flex: 1 1 45%;
+    margin-top: 0;
+  }
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
